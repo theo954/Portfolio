@@ -1,15 +1,80 @@
-/* reset css*/
+body {
+    padding: 0 2%;
+    margin: 0;
+}
+section{
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 0.2rem;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+nav .profile{
+    display: flex;
+    align-items: center;
+}
+nav .profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li{
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+nav ul li:hover{
+    border-bottom-color: #000;
+}
+.page-content{
+    margin: 4%;
+}
+.page-content header{
+    margin-top:  5% ;
+    max-width: 80%;
+}
+.page-content header h1{
+     margin: 0;
+     text-align: center;
+     box-sizing: border-box;
+     border: solid #000 50px;
+}
+ .logiciel{
+     margin: 0%;
+    text-align: center;
+    margin-left: 50px;
+}
+.competence{
+    text-align: center;
+}
+.experience h1 ul{
+    text-align: right;
+    box-sizing:  border-box;
+    border: white;
+}
+.etude{
+    text-align: center;
+}
+.loisir{
+    text-align: center;
+}
 
-html{
-    font-size: 62.5%;
-}
-body{
-    font: 1.6rem "Roboto" ,sans-serif;
-    margin: 0;
-    line-height: 1.6;
-}
-h1,h2,h3,p,figure,ul,ol{
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
+@media screen and (max-width: 700px) {
+    nav{
+        justify-content: center;
+    }
+    nav ul{
+        display: none;
+    }
 }
