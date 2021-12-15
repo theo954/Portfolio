@@ -1,73 +1,155 @@
+html{
+  font-size: 62.5%;
+}
+h1, h2, h3, p, figure, ul, ol{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
 body {
+    font: 1.6rem sans-serif;
     padding: 0 2%;
     margin: 0;
+    background-repeat: no-repeat;
+}
+header{
+    background-color: purple;
+      padding: 1rem;
+
+
+}
+header h1{
+  color: #fff;
+  line-height: 8.5rem;
+  font-weight: normal;
 }
 section{
-    border-color: #ccc;
-    border-style: solid;
-    border-width: 0.2rem;
+    border-color:transparent;
+    border-style: outset;
+    overflow: hidden;
+    border-width: 0.1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+
+}
+section h2{
+  line-height: 4.5rem;
+  padding: 1rem;
+  color: #fff;
+  font-weight: normal;
+}
+section p, section ul{
+  line-height: 2.6rem;
 }
 nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: black;
     position: sticky;
     top: 0;
+    padding: 1rem;
+
 }
+
 nav .profile{
     display: flex;
     align-items: center;
+    background-color: black;
+
 }
+
 nav .profile img{
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
+
 }
+
 nav ul{
     display: flex;
     list-style-type: none;
+    color: Purple;
 }
+
 nav ul li{
     margin-left: 20px;
     cursor: pointer;
-    border-bottom: 1px solid #fff;
+    color: #fff;
 }
+
 nav ul li:hover{
     border-bottom-color: #000;
 }
+h2{
+    background-color: black;
+}
+
 .page-content{
     margin: 4%;
+    color: Purple;
 }
+
 .page-content header{
-    margin-top:  5% ;
-    max-width: 80%;
+    text-align: center;
 }
+
 .page-content header h1{
-     margin: 0;
      text-align: center;
-     box-sizing: border-box;
-     border: solid #000 50px;
+     margin-left: 50px;
+     margin-right: 50px;
 }
  .logiciel{
-     margin: 0%;
-    text-align: center;
+    margin: 0%;
+
     margin-left: 50px;
+    margin-right: 50px;
+    background-color: whitesmoke;
+    color: Purple;
 }
 .competence{
-    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    color: Purple;
 }
-.experience h1 ul{
-    text-align: right;
-    box-sizing:  border-box;
-    border: white;
+.experience{
+    margin-left: 50px;
+    margin-right: 50px;
+
+    background-color: whitesmoke;
+    padding-right: 0.2rem;
+    color: Purple;
 }
 .etude{
-    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    background-color: whitesmoke;
+    color: Purple;
 }
 .loisir{
-    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    background-color: whitesmoke;
+    color: Purple;
+}
+.figure img{
+  display: inline-block;
+  vertical-align: middle;
+}
+.figure{
+  text-align: center;
+  width: 80rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 @media screen and (max-width: 700px) {
@@ -77,4 +159,12 @@ nav ul li:hover{
     nav ul{
         display: none;
     }
+}
+
+footer{
+    border-style: solid;
+    border-width: 0.2rem;
+    border-spacing: 5px;
+    box-shadow: 1.5rem;
+    text-align: center;
 }
