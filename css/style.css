@@ -12,14 +12,12 @@ a{
 
 body {
     font: 1.6rem sans-serif;
-    padding: 0 2%;
     margin: 0;
-    background-repeat: no-repeat;
+
 }
 header{
-    background-color: purple;
-      padding: 1rem;
-
+    background-color: #468189;
+    padding: 1rem;
 
 }
 header h1{
@@ -27,15 +25,27 @@ header h1{
   line-height: 8.5rem;
   font-weight: normal;
 }
-section{
-    border-color:transparent;
-    border-style: outset;
-    overflow: hidden;
-    border-width: 0.1rem;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-    padding: 1rem;
+header img{
+    border-radius: 50%;
+}
 
+header > div {
+    display: flex;
+    flex-direction: row;
+}
+
+header > div div {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+section{
+    overflow: hidden;
+    color: #000000;
+}
+section > div{
+  padding: 3rem;
 }
 section h2{
   line-height: 4.5rem;
@@ -48,97 +58,31 @@ section p, section ul{
 }
 nav {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    background-color: black;
+    background-color: #031926;
     position: sticky;
-    top: 0;
+    justify-content: space-around;
+    flex-direction: row;
     padding: 1rem;
-
-}
-
-nav .profile{
-    display: flex;
-    align-items: center;
-    background-color: black;
-
-}
-
-nav .profile img{
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-
-}
-
-nav ul{
-    display: flex;
-    list-style-type: none;
-    color: Purple;
-}
-
-nav ul li{
-    margin-left: 20px;
-    cursor: pointer;
-    color: #fff;
-}
-
-nav ul li:hover{
-    border-bottom-color: #000;
 }
 h2{
-    background-color: black;
-}
-
-.page-content{
-    margin: 4%;
-    color: Purple;
-}
-
-.page-content header{
-    text-align: center;
-}
-
-.page-content header h1{
-     text-align: center;
-     margin-left: 50px;
-     margin-right: 50px;
+    background-color: #031926;
 }
  .logiciel{
     margin: 0%;
-
-    margin-left: 50px;
-    margin-right: 50px;
     background-color: whitesmoke;
-    color: Purple;
 }
 .competence{
-    margin-left: 50px;
-    margin-right: 50px;
-
-    color: Purple;
 }
 .experience{
-    margin-left: 50px;
-    margin-right: 50px;
-
     background-color: whitesmoke;
     padding-right: 0.2rem;
-    color: Purple;
 }
 .etude{
-    margin-left: 50px;
-    margin-right: 50px;
-
     background-color: whitesmoke;
-    color: Purple;
 }
 .loisir{
-    margin-left: 50px;
-    margin-right: 50px;
-
     background-color: whitesmoke;
-    color: Purple;
 }
 .figure img{
   display: inline-block;
@@ -154,7 +98,7 @@ h2{
 
 @media screen and (max-width: 700px) {
     nav{
-        justify-content: center;
+        flex-direction: column;
     }
     nav ul{
         display: none;
